@@ -1,0 +1,280 @@
+/* Reset and Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: url('background.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  margin: 0 80px 0 0;
+  padding: 0;
+}
+
+.navbar a {
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #00aced;
+}
+
+/* Hero Section */
+.hero {
+  height: auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.hero h2 {
+  font-size: 24px;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 30px;
+  margin-right: 50px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #00aced;
+}
+
+/* Section Styling */
+.section {
+  padding: 80px;
+ 
+  margin: 0;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00aced;
+  display: inline-block;
+}
+
+.section p, .section ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section ul li {
+  margin-bottom: 25px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* for responsiveness */
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00aced;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+   margin-top: 20px;
+}
+
+.about-text {
+  max-width: 1000px;
+}
+
+/* Personal Pursuits Section */
+.pursuits-section {
+ 
+  padding: 80px 60px;
+  text-align: center;
+  margin-top: -7px; 
+  padding-top: 40px; 
+}
+
+.pursuits-title {
+  font-size: 36px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Container for cards */
+.pursuits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Individual card */
+.pursuit-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px 30px;
+  border-radius: 16px;
+  width: 300px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 172, 237, 0.2);
+  transition: transform 0.3s;
+}
+
+.pursuit-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Circle icon */
+.icon-circle {
+  background: linear-gradient(145deg, #2e6ff2, #6b9aff);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.icon-circle i {
+  font-size: 32px;
+  color: white;
+}
+
+.pursuit-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.pursuit-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.education-section {
+  margin-top: 50px;
+}
+
+.education-heading {
+  font-size: 26px;
+  letter-spacing: 4px;
+  border-bottom: 2px solid #00aced;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background-color: #00aced;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00aced;
+}
+
+.timeline-content {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 172, 237, 0.2);
+  transition: transform 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-content h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #00aced;
+}
+
+.timeline-content span {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.timeline-content p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-hover {
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  display: inline-block;
+}
+
+.project-hover:hover {
+  transform: scale(1.05);
+  font-size: 18px; /* Optional: makes text a bit larger */
+}
